@@ -431,3 +431,5 @@ The optimized assets will be emitted to `frontend/dist/`.
 
 ## 📜 License
 This project is licensed under the ISC License.
+#   s t o r e - r a t i n g - p l a t f o r m  
+ 
