@@ -1,0 +1,23 @@
+{
+  "name": "store-rating-platform-root",
+  "version": "1.0.0",
+  "description": "Full-Stack Store Rating Platform with Admin, Owner, and User roles",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "test:backend": "npm --prefix backend test",
+    "test:frontend": "npm --prefix frontend test",
+    "test": "npm --prefix backend test && npm --prefix frontend test",
+    "db:init": "node backend/database/initDb.js",
+    "db:seed": "node backend/database/seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "author": "Store Rating Platform Team",
+  "license": "ISC"
+}
